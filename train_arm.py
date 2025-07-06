@@ -90,7 +90,7 @@ model_path = "models/simplified_arm"
 log_dir = "logs"
 os.makedirs("models", exist_ok=True)
 
-# ✅ Подключаем Monitor для логов и ep_rew_mean
+# Подключаем Monitor для логов и ep_rew_mean
 env = Monitor(SimpleArmEnv(), filename=None)
 
 model = PPO(
@@ -108,7 +108,7 @@ model = PPO(
 print(" Обучение начинается...")
 model.learn(total_timesteps=200_000)
 model.save(model_path)
-print(f"✅ Модель сохранена: {model_path}.zip")
+print(f"Модель сохранена: {model_path}.zip")
 
 # 🔢 Сколько целей было достигнуто?
 # Достаём из env
