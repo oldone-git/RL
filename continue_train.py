@@ -9,9 +9,9 @@ env = Monitor(SimpleArmEnv(), filename=None)
 # Загружаем сохранённую модель
 model = PPO.load("models/simplified_arm", env=env)
 
-print("🚀 Продолжаем обучение ещё 100 000 шагов...")
+print(" Продолжаем обучение ещё 100 000 шагов...")
 model.learn(total_timesteps=100_000)
 model.save("models/simplified_arm")
-print("✅ Дообучено и сохранено!")
+print(" Дообучено и сохранено!")
 
 p.disconnect()
