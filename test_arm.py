@@ -71,7 +71,7 @@ class TestArmEnv(gym.Env):
 
         done = distance < 0.1
         if done:
-            print(f"✅ Попадание! Дистанция: {distance:.3f}")
+            print(f" Попадание! Дистанция: {distance:.3f}")
             reward += 50
         time.sleep(1 / 240)
         return obs, reward, done, False, {}
