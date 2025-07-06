@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 python train_arm.py
 
-👁 Запуск визуализации
+ Запуск визуализации
 
 python test_arm.py
 
